@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1100 640" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#a8681a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1100" height="640" fill="#ffffff"/>
+
+  <text x="550" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#111">Book Club Reading Challenge &amp; Discussion Portal — Use-Case Diagram</text>
+
+  <!-- System boundary -->
+  <rect x="230" y="55" width="690" height="545" fill="#fbfbfd" stroke="#333" stroke-width="1.5"/>
+  <text x="575" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Reading Challenge &amp; Discussion Portal</text>
+
+  <!-- Actor: Club Member (left) -->
+  <g stroke="#222" stroke-width="1.5" fill="none">
+    <circle cx="90" cy="330" r="14" fill="#fff"/>
+    <line x1="90" y1="344" x2="90" y2="390"/>
+    <line x1="65" y1="360" x2="115" y2="360"/>
+    <line x1="90" y1="390" x2="68" y2="420"/>
+    <line x1="90" y1="390" x2="112" y2="420"/>
+  </g>
+  <text x="90" y="440" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">Club Member</text>
+
+  <!-- Actor: Discussion Lead (right) -->
+  <g stroke="#222" stroke-width="1.5" fill="none">
+    <circle cx="1010" cy="160" r="14" fill="#fff"/>
+    <line x1="1010" y1="174" x2="1010" y2="220"/>
+    <line x1="985" y1="190" x2="1035" y2="190"/>
+    <line x1="1010" y1="220" x2="988" y2="250"/>
+    <line x1="1010" y1="220" x2="1032" y2="250"/>
+  </g>
+  <text x="1010" y="270" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">Discussion Lead</text>
+
+  <!-- Row 1 -->
+  <ellipse cx="330" cy="105" rx="90" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="330" y="102" text-anchor="middle" font-size="11.5">Set Reading</text>
+  <text x="330" y="116" text-anchor="middle" font-size="11.5">Goal</text>
+
+  <ellipse cx="555" cy="105" rx="105" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="555" y="102" text-anchor="middle" font-size="11.5">Update Reading</text>
+  <text x="555" y="116" text-anchor="middle" font-size="11.5">Progress</text>
+
+  <!-- Row 2 -->
+  <ellipse cx="330" cy="205" rx="100" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="330" y="202" text-anchor="middle" font-size="11.5">Post Discussion</text>
+  <text x="330" y="216" text-anchor="middle" font-size="11.5">Comment</text>
+
+  <ellipse cx="595" cy="205" rx="100" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="595" y="202" text-anchor="middle" font-size="11.5">View Discussion</text>
+  <text x="595" y="216" text-anchor="middle" font-size="11.5">Thread</text>
+
+  <ellipse cx="840" cy="205" rx="95" ry="28" fill="#fff4e0" stroke="#a8681a"/>
+  <text x="840" y="202" text-anchor="middle" font-size="11.5">Reveal Spoiler</text>
+  <text x="840" y="216" text-anchor="middle" font-size="11.5">Content</text>
+
+  <!-- Row 3 -->
+  <ellipse cx="330" cy="300" rx="95" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="330" y="297" text-anchor="middle" font-size="11.5">Mark Chapter</text>
+  <text x="330" y="311" text-anchor="middle" font-size="11.5">as Read</text>
+
+  <!-- Row 4 -->
+  <ellipse cx="330" cy="400" rx="100" ry="28" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="330" y="397" text-anchor="middle" font-size="11.5">Vote in Monthly</text>
+  <text x="330" y="411" text-anchor="middle" font-size="11.5">Poll</text>
+
+  <ellipse cx="620" cy="400" rx="105" ry="28" fill="#fff4e0" stroke="#a8681a"/>
+  <text x="620" y="397" text-anchor="middle" font-size="11.5">Verify User</text>
+  <text x="620" y="411" text-anchor="middle" font-size="11.5">Session</text>
+
+  <!-- Row 5 (Discussion Lead) -->
+  <ellipse cx="720" cy="480" rx="105" ry="28" fill="#eafbea" stroke="#1f7a3f"/>
+  <text x="720" y="477" text-anchor="middle" font-size="11.5">Create Monthly</text>
+  <text x="720" y="491" text-anchor="middle" font-size="11.5">Poll</text>
+
+  <ellipse cx="460" cy="530" rx="120" ry="28" fill="#eafbea" stroke="#1f7a3f"/>
+  <text x="460" y="527" text-anchor="middle" font-size="11.5">Moderate Discussion</text>
+  <text x="460" y="541" text-anchor="middle" font-size="11.5">Comments</text>
+
+  <!-- Associations: Club Member -->
+  <g stroke="#555" stroke-width="1.3">
+    <line x1="104" y1="322" x2="248" y2="130"/>
+    <line x1="104" y1="330" x2="245" y2="215"/>
+    <line x1="104" y1="342" x2="245" y2="305"/>
+    <line x1="104" y1="355" x2="240" y2="390"/>
+    <line x1="104" y1="368" x2="345" y2="500"/>
+  </g>
+
+  <!-- Associations: Discussion Lead -->
+  <g stroke="#555" stroke-width="1.3">
+    <line x1="995" y1="200" x2="695" y2="205"/>
+    <line x1="995" y1="235" x2="740" y2="465"/>
+    <line x1="995" y1="250" x2="530" y2="518"/>
+  </g>
+
+  <!-- <<include>>: Post Discussion Comment includes Verify User Session -->
+  <path d="M415,220 C500,290 540,340 552,388" fill="none" stroke="#a8681a" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="500" y="300" text-anchor="middle" font-size="10.5" fill="#a8681a" font-style="italic">&#171;include&#187;</text>
+
+  <!-- <<include>>: Vote in Monthly Poll includes Verify User Session -->
+  <path d="M430,400 C470,400 480,400 512,400" fill="none" stroke="#a8681a" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="470" y="388" text-anchor="middle" font-size="10.5" fill="#a8681a" font-style="italic">&#171;include&#187;</text>
+
+  <!-- <<extend>>: Reveal Spoiler Content extends View Discussion Thread -->
+  <path d="M745,205 C720,205 715,205 698,205" fill="none" stroke="#a8681a" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="720" y="192" text-anchor="middle" font-size="10.5" fill="#a8681a" font-style="italic">&#171;extend&#187;</text>
+
+  <!-- Legend -->
+  <rect x="250" y="595" width="12" height="12" fill="#eaf2ff" stroke="#2b5fad"/>
+  <text x="268" y="605" font-size="10.5" fill="#333">Club Member use case</text>
+  <rect x="430" y="595" width="12" height="12" fill="#eafbea" stroke="#1f7a3f"/>
+  <text x="448" y="605" font-size="10.5" fill="#333">Discussion Lead use case</text>
+  <rect x="630" y="595" width="12" height="12" fill="#fff4e0" stroke="#a8681a"/>
+  <text x="648" y="605" font-size="10.5" fill="#333">Included / Extending use case</text>
+</svg>
